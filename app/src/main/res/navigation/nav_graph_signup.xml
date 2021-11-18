@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_signup"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.jetpack.navigationarchitecture.signup.fragment.DashboardFragment"
+        android:label="DashboardFragment"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboardFragment_to_userNameFragment"
+            app:destination="@id/userNameFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_termConditionFragment"
+            app:destination="@id/termConditionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/termConditionFragment"
+        android:name="com.jetpack.navigationarchitecture.signup.fragment.TermConditionFragment"
+        android:label="TermConditionFragment"
+        tools:layout="@layout/fragment_term_condition"/>
+    <fragment
+        android:id="@+id/userNameFragment"
+        android:name="com.jetpack.navigationarchitecture.signup.fragment.UserNameFragment"
+        android:label="UserNameFragment"
+        tools:layout="@layout/fragment_user_name">
+        <action
+            android:id="@+id/action_userNameFragment_to_emailFragment"
+            app:destination="@id/emailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailFragment"
+        android:name="com.jetpack.navigationarchitecture.signup.fragment.EmailFragment"
+        android:label="EmailFragment"
+        tools:layout="@layout/fragment_email">
+        <action
+            android:id="@+id/action_emailFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.jetpack.navigationarchitecture.signup.fragment.WelcomeFragment"
+        android:label="WelcomeFragment"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcomeFragment_to_termConditionFragment"
+            app:destination="@id/termConditionFragment" />
+    </fragment>
+</navigation>

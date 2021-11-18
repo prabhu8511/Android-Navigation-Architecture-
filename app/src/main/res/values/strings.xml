@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NavigationArchitecture</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="term_condition">Term condition</string>
+    <string name="welcome">Welcome</string>
+    <string name="sign_up">Sign up</string>
+    <string name="email">Email</string>
+    <string name="submit">Submit</string>
+    <string name="term_condition_2">Term Condition 2</string>
+    <string name="term_condition_1">Term Condition 1</string>
+    <string name="term_condition_3">Term Condition 3</string>
+    <string name="user_name">User name</string>
+</resources>
